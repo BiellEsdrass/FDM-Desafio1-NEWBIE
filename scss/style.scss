@@ -53,32 +53,39 @@ body{
         line-height: 1.3rem;
     }
 
-    .btns{
-        width: 100%;
+    ul{
         display: flex;
         justify-content: space-between;
-    }
-    .btns input[type=button]{
-        height: 3.5rem;
-        width: 3.5rem;
-        border-radius: 50%;
-        background-color: hsl(213, 19%, 18%);
-        border: none;
+        list-style: none;
 
-        color: hsl(217, 12%, 63%);
-        font-size: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        cursor: pointer;
-        transition: all .5s;
+        button{
+            border-radius: 50%;
+            border: none;
+            height: 3.5rem;
+            width: 3.5rem;
+            text-align: center;
+            cursor: pointer;
+
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: hsl(217, 12%, 63%);
+
+            background-color: hsl(213, 19%, 18%);
+            transition: all .5s;
+        }
+
+        button:hover{
+            color: white;
+            background-color: hsl(216, 12%, 54%);
+        }
+
+        button:focus{
+            color: white;
+            background-color: #fb7413;
+        }
     }
-    .btns input[type=button]:hover{
-        background-color: hsl(217, 12%, 63%);
-        color: white;
-    }
-    .btns input[type=button]:focus{
-        background-color: #fb7413;
-        color: white;
-    }
+    
+
 
     #enviar{
         position: relative;
@@ -97,8 +104,61 @@ body{
     }
 
     #enviar:hover{
-        background-color: #ff8c39;
+        background-color: white;
         letter-spacing: 5px;
-        
+        color: #fb7413;
+    }
+}
+
+.avaliar{
+    background-image: linear-gradient(to right top, #22262b, #1f2329, #1f252b, #21272f, #262e38);
+    padding: 2rem;
+    height: 27rem;
+    width: 400px;
+    border-radius: 35px;
+    position: absolute;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    .text{
+        background-color: rgb(48, 56, 66);
+        color: #fb7413;
+        width: 60%;
+        padding: .5rem ;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 18px;
+
+        position: relative;
+        top: 1.5rem;
+    }
+
+
+    h1{
+        position: relative;
+        top: 4rem;
+        color: white;
+    }
+    p{
+        position: relative;
+        top: 5rem;
+        color: hsla(216, 12%, 54%, 0.764);
+        text-align: center;
+    }
+}
+
+
+.attribution{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+
+    a{
+        color: #fb7413;
+        font-weight: 900;
     }
 }
